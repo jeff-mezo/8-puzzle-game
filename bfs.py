@@ -144,7 +144,7 @@ def main():
     print_board(goal_state)
 
     if not is_solvable(initial_state):
-        print("❌ This puzzle is unsolvable.")
+        print("This puzzle is unsolvable.")
         return
 
     state_space = {}  # holds state transitions
@@ -158,7 +158,7 @@ def main():
 
     # Print solution path
     path = solution.path()
-    print("\n✅ Solution Path:\n")
+    print("\nSolution Path:\n")
     for i, node in enumerate(path):
         print(f"Step {i}:")
         print_board(node.state)
