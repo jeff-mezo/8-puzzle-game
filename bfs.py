@@ -94,7 +94,7 @@ def bfs(initial_state, goal_state, state_space):
                     continue
                 child = Node(neighbor, node)
                 if neighbor == goal_state:
-                    print("\n🚩 GOAL FOUND at Level", level + 1)
+                    print("\nGOAL FOUND at Level", level + 1)
                     return child, level + 1
                 frontier.append(child)
 
