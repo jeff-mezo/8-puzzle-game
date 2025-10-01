@@ -124,7 +124,14 @@ def main():
     print("--------------------------------------")
     print("BFS explores states level by level, ensuring shortest solution.")
     print("To start, type a file that has exactly 6 lines (3 for initial, 3 for goal)\n")
-    filename = input("Enter input filename. e.g. (C:\\Users\\8-bit.txt): ").strip()
+    print("Example input file (input.txt):")
+    print("  1,2,3 --> Initial state")
+    print("  4,0,6")
+    print("  7,5,8\n")
+    print("  1,2,3 --> Goal state")
+    print("  4,5,6")
+    print("  7,8,0\n")
+    filename = input("Enter input filename. e.g. (C:\\Users\\input.txt): ").strip()
     try:
         initial_state, goal_state = read_input_file(filename)
     except Exception as e:
