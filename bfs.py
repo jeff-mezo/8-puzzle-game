@@ -122,9 +122,9 @@ def read_input_file(filename):
 def main():
     print("Breadth-First Search (BFS) for 8-Puzzle")
     print("--------------------------------------")
-    print("BFS explores states level by level, ensuring shortest solution.\n")
-
-    filename = input("Enter input filename: ").strip()
+    print("BFS explores states level by level, ensuring shortest solution.")
+    print("To start, type a file that has exactly 6 lines (3 for initial, 3 for goal)\n")
+    filename = input("Enter input filename. e.g. (C:\\Users\\8-bit.txt): ").strip()
     try:
         initial_state, goal_state = read_input_file(filename)
     except Exception as e:
