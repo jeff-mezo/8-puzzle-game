@@ -201,7 +201,7 @@ def main():
 
     # Print the solution path
     path = solution_node.path()
-    print("\n✅ Solution Path:\n")
+    print("\nSolution Path:\n")
     for step_index, node in enumerate(path):
         print(f"Step {step_index}:")
         print_board(node.state)
