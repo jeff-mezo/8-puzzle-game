@@ -127,7 +127,7 @@ def bfs(initial_state, goal_state, state_space):
 
                 # Goal check
                 if neighbor == goal_state:
-                    print("\n🚩 GOAL FOUND at Level", level + 1)
+                    print("\nGOAL FOUND at Level", level + 1)
                     return child, level + 1
 
                 frontier.append(child)
@@ -187,7 +187,7 @@ def main():
     print_board(goal_state)
 
     if not is_solvable(initial_state):
-        print("❌ This puzzle is unsolvable.")
+        print("This puzzle is unsolvable.")
         return
 
     state_space = {}  # Dictionary to hold state transitions
