@@ -2,6 +2,7 @@
 # Simple 8-Puzzle sliding game
 # The 8-puzzle is a classic sliding puzzle consisting of 8 numbered tiles and one empty space
 # arranged in a 3x3 grid. The goal is to move the tiles around until they are in the correct order.
+#
 
 def instructions():
     
