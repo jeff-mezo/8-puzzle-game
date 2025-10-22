@@ -85,3 +85,5 @@ while True:
     # 8. If the puzzle is not solved, the loop will repeat,
     # displaying the updated board and asking for the next move.
     
+    # 9
+    
